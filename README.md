@@ -3,8 +3,18 @@
 <p align="center">
   Sistema completo de gerenciamento de Funcionários, Projetos e Alocações,<br>
   desenvolvido em Node.js, MySQL e JavaScript puro.<br><br>
-  <i>Projeto acadêmico transformado em aplicação para portfólio</i>
+  <i>Projeto acadêmico em equipe(5 integrantes) transformado em aplicação para portfólio</i>
 </p>
+
+---
+
+## 👥 Equipe do Projeto
+
+- **Harley Oliveira(eu)**
+- **Pedro Hiarley**
+- **Simão Parente**
+- **Davi Souza**
+- **Jeison Miranda**
 
 ---
 
@@ -193,7 +203,7 @@ frontend/index.html
 
 📚 Aprendizados
 
-Neste projeto, desenvolvi:
+Neste projeto, desenvolvemos:
 
 - Modelagem de banco de dados
 
