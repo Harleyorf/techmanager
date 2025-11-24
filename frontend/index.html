@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechManager - Frontend</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>TechManager</h1>
+    <nav>
+      <button id="tab-func" class="active">Funcionários</button>
+      <button id="tab-proj">Projetos</button>
+      <button id="tab-aloc">Alocações</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="view-func" class="view visible">
+      <h2>Funcionários</h2>
+      <div class="form-card">
+        <h3 id="func-form-title">Cadastrar Funcionário</h3>
+        <form id="func-form">
+          <input type="hidden" id="func-id" />
+          <label>Nome: <input id="func-nome" required maxlength="100" /></label>
+          <label>Cargo: <input id="func-cargo" maxlength="50" /></label>
+          <label>Email: <input id="func-email" type="email" maxlength="100" /></label>
+          <label>Data Contratação: <input id="func-data" type="date" /></label>
+          <label>Salário: <input id="func-salario" type="number" step="0.01" min="0" /></label>
+          <div class="form-actions">
+            <button type="submit">Salvar</button>
+            <button type="button" id="func-cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="list-card">
+        <h3>Lista de Funcionários</h3>
+        <table id="func-table">
+          <thead><tr><th>ID</th><th>Nome</th><th>Cargo</th><th>Email</th><th>Salário</th><th>Ações</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="view-proj" class="view">
+      <h2>Projetos</h2>
+      <div class="form-card">
+        <h3 id="proj-form-title">Criar Projeto</h3>
+        <form id="proj-form">
+          <input type="hidden" id="proj-id" />
+          <label>Nome: <input id="proj-nome" required maxlength="100" /></label>
+          <label>Descrição: <textarea id="proj-desc"></textarea></label>
+          <label>Data Início: <input id="proj-data-inicio" type="date" /></label>
+          <label>Previsão Término: <input id="proj-data-fim" type="date" /></label>
+          <label>Status:
+            <select id="proj-status">
+              <option>Planejamento</option>
+              <option>Em Andamento</option>
+              <option>Concluído</option>
+            </select>
+          </label>
+          <div class="form-actions">
+            <button type="submit">Salvar</button>
+            <button type="button" id="proj-cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="list-card">
+        <h3>Lista de Projetos</h3>
+        <table id="proj-table">
+          <thead><tr><th>ID</th><th>Nome</th><th>Status</th><th>Período</th><th>Ações</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="view-aloc" class="view">
+      <h2>Alocações</h2>
+
+      <div class="form-card">
+        <h3>Alocar Funcionário a Projeto</h3>
+        <form id="aloc-form">
+          <label>Funcionário:
+            <select id="aloc-func"></select>
+          </label>
+          <label>Projeto:
+            <select id="aloc-proj"></select>
+          </label>
+          <label>Data Alocação: <input id="aloc-data" type="date" /></label>
+          <label>Horas Semanais: <input id="aloc-horas" type="number" min="1" /></label>
+          <div class="form-actions">
+            <button type="submit">Alocar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="list-card">
+        <h3>Ver alocações por projeto</h3>
+        <label>Projeto:
+          <select id="aloc-filter-proj"><option value="">-- selecione --</option></select>
+        </label>
+        <table id="aloc-table">
+          <thead><tr><th>Funcionário</th><th>Data Aloc.</th><th>Horas</th><th>Ações</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
