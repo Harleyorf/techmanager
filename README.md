@@ -99,8 +99,7 @@ Quando um funcionário é alocado pela **primeira vez** a um projeto:
 
 ➡️ O status muda automaticamente de **"Planejamento"** para **"Em Andamento"**.
 
-sql
-
+```sql
 CREATE TRIGGER trg_atualizar_status_projeto_auto
 AFTER INSERT ON alocacoes
 FOR EACH ROW
@@ -112,6 +111,7 @@ BEGIN
         WHERE id = NEW.projeto_id AND status = 'Planejamento';
     END IF;
 END;
+```
 
 ⚙️ Backend (Node.js + Express)
 
