@@ -171,9 +171,11 @@ Recursos:
 
 👥 screenshots/funcionarios.png
 
-📁 screenshots/projetos.png
+📁 techmanager/screenshots
+/projetos.png
 
-🔗 screenshots/alocacoes.png
+🔗 techmanager/screenshots
+/alocacoes.png
 
 ▶️ Como Rodar o Projeto
 
