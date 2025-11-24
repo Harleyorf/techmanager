@@ -149,6 +149,7 @@ DELETE /api/alocacoes/:funcionario_id/:projeto_id
 ```
 
 Conexão MySQL:
+```
 import mysql from "mysql2/promise";
 
 export const db = await mysql.createConnection({
@@ -157,6 +158,7 @@ export const db = await mysql.createConnection({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
 });
+```
 
 🎨 Frontend (HTML + CSS + JavaScript)
 
