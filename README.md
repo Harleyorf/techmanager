@@ -169,11 +169,11 @@ Recursos:
 
 📸 Screenshots do Sistema
 
-👥 Funcionários
+👥 screenshots/funcionarios.png
 
-📁 Projetos
+📁 screenshots/projetos.png
 
-🔗 Alocações
+🔗 screenshots/alocacoes.png
 
 ▶️ Como Rodar o Projeto
 
