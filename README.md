@@ -126,24 +126,27 @@ END;
 ⚙️ Backend (Node.js + Express)
 
 A API REST inclui:
-
+```
 Funcionários
 GET    /api/funcionarios
 POST   /api/funcionarios
 PUT    /api/funcionarios/:id
 DELETE /api/funcionarios/:id
-
+```
+```
 Projetos
 GET    /api/projetos
 POST   /api/projetos
 PUT    /api/projetos/:id
 DELETE /api/projetos/:id
-
+```
+```
 Alocações
 GET    /api/alocacoes
 POST   /api/alocacoes
 PUT    /api/alocacoes/:funcionario_id/:projeto_id
 DELETE /api/alocacoes/:funcionario_id/:projeto_id
+```
 
 Conexão MySQL:
 import mysql from "mysql2/promise";
@@ -169,13 +172,11 @@ Recursos:
 
 📸 Screenshots do Sistema
 
-👥 screenshots/funcionarios.png
+👥 <img src="screenshots/funcionarios.png"/>
 
-📁 techmanager/screenshots
-/projetos.png
+📁 <img src="screenshots/projetos.png"/>
 
-🔗 techmanager/screenshots
-/alocacoes.png
+🔗 <img src="screenshots/alocacoes.png"/>
 
 ▶️ Como Rodar o Projeto
 
