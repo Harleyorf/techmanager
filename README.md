@@ -3,7 +3,7 @@
 <p align="center">
   Sistema completo de gerenciamento de Funcionários, Projetos e Alocações,<br>
   desenvolvido em Node.js, MySQL e JavaScript puro.<br><br>
-  <i>Projeto acadêmico transformado em aplicação real para portfólio profissional.</i>
+  <i>Projeto acadêmico transformado em aplicação para portfólio</i>
 </p>
 
 ---
