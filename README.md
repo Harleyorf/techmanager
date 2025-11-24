@@ -13,7 +13,7 @@
 - **Harley Oliveira(eu)**
 - **Pedro Hiarley**
 - **Simão Parente**
-- **Davi Souza**
+- **Davi Luz**
 - **Jeison Miranda**
 
 ---
