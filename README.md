@@ -172,11 +172,11 @@ Recursos:
 
 📸 Screenshots do Sistema
 
-👥 <img src="screenshots/funcionarios.png"/>
+👥 Funcionários <img src="screenshots/funcionarios.png"/>
 
-📁 <img src="screenshots/projetos.png"/>
+📁 Projetos <img src="screenshots/projetos.png"/>
 
-🔗 <img src="screenshots/alocacoes.png"/>
+🔗 Alocações <img src="screenshots/alocacoes.png"/>
 
 ▶️ Como Rodar o Projeto
 
