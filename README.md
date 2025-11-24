@@ -99,7 +99,8 @@ Quando um funcionário é alocado pela **primeira vez** a um projeto:
 
 ➡️ O status muda automaticamente de **"Planejamento"** para **"Em Andamento"**.
 
-```sql
+sql
+
 CREATE TRIGGER trg_atualizar_status_projeto_auto
 AFTER INSERT ON alocacoes
 FOR EACH ROW
@@ -148,18 +149,15 @@ export const db = await mysql.createConnection({
 
 Recursos:
 
-Formulários funcionais
+- Formulários funcionais
 
-CRUD completo
+- CRUD completo
 
-Atualizações dinâmicas via fetch()
+- Atualizações dinâmicas via fetch()
 
-Interface limpa e objetiva
+- Interface limpa e objetiva
 
 📸 Screenshots do Sistema
-
-Coloque suas imagens reais na pasta /screenshots do GitHub.
-Aqui estão os prints que você me enviou.
 
 👥 Funcionários
 
@@ -168,47 +166,47 @@ Aqui estão os prints que você me enviou.
 🔗 Alocações
 
 ▶️ Como Rodar o Projeto
-1️⃣ Instalar dependências
-bash
-Copiar código
+
+1️⃣ Instalar dependências:
+
 npm install
-2️⃣ Arquivo .env
-ini
-Copiar código
+
+2️⃣ Arquivo .env:
+
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
 DB_NAME=techmanager
 PORT=3000
+
 3️⃣ Importar banco
-pgsql
-Copiar código
+
 sql/schema.sql
+
 4️⃣ Iniciar backend
-bash
-Copiar código
+
 npm start
+
 5️⃣ Abrir frontend
-bash
-Copiar código
-frontend/funcionarios.html
-frontend/projetos.html
-frontend/alocacoes.html
+
+frontend/index.html
+
 📚 Aprendizados
+
 Neste projeto, desenvolvi:
 
-Modelagem de banco de dados
+- Modelagem de banco de dados
 
-Relacionamentos N:N
+- Relacionamentos N:N
 
-Trigger SQL
+- Trigger SQL
 
-Criação de API REST
+- Criação de API REST
 
-Programação assíncrona
+- Programação assíncrona
 
-Manipulação de DOM
+- Manipulação de DOM
 
-Integração frontend-backend
+- Integração frontend-backend
 
-Organização de projeto full stack
+- Organização de projeto full stack
