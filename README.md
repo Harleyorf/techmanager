@@ -57,8 +57,6 @@ techmanager/
 ├── schema.sql
 └── inserts.sql
 
-yaml
-Copiar código
 
 ---
 
@@ -113,34 +111,30 @@ BEGIN
         WHERE id = NEW.projeto_id AND status = 'Planejamento';
     END IF;
 END;
+
 ⚙️ Backend (Node.js + Express)
+
 A API REST inclui:
 
 Funcionários
-bash
-Copiar código
 GET    /api/funcionarios
 POST   /api/funcionarios
 PUT    /api/funcionarios/:id
 DELETE /api/funcionarios/:id
+
 Projetos
-bash
-Copiar código
 GET    /api/projetos
 POST   /api/projetos
 PUT    /api/projetos/:id
 DELETE /api/projetos/:id
+
 Alocações
-ruby
-Copiar código
 GET    /api/alocacoes
 POST   /api/alocacoes
 PUT    /api/alocacoes/:funcionario_id/:projeto_id
 DELETE /api/alocacoes/:funcionario_id/:projeto_id
-Conexão MySQL:
 
-js
-Copiar código
+Conexão MySQL:
 import mysql from "mysql2/promise";
 
 export const db = await mysql.createConnection({
@@ -149,7 +143,9 @@ export const db = await mysql.createConnection({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
 });
+
 🎨 Frontend (HTML + CSS + JavaScript)
+
 Recursos:
 
 Formulários funcionais
@@ -161,6 +157,7 @@ Atualizações dinâmicas via fetch()
 Interface limpa e objetiva
 
 📸 Screenshots do Sistema
+
 Coloque suas imagens reais na pasta /screenshots do GitHub.
 Aqui estão os prints que você me enviou.
 
