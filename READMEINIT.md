@@ -16,7 +16,3 @@
    npm start
    ```
 5. Abra o frontend `frontend/index.html` no navegador. Se o frontend não se conectar, ajuste `API_BASE` em `frontend/app.js` para `http://localhost:3000`.
-
-## Notas
-- A trigger `trg_atualizar_status_projeto_auto` está no script SQL.
-- Se precisar que eu gere um arquivo .zip com tudo (este mesmo), já está pronto neste pacote.
