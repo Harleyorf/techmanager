@@ -183,29 +183,29 @@ Recursos:
 ▶️ Como Rodar o Projeto
 
 1️⃣ Instalar dependências:
-
+```
 npm install
-
+```
 2️⃣ Arquivo .env:
-
+```
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
 DB_NAME=techmanager
 PORT=3000
-
+```
 3️⃣ Importar banco
-
+```
 sql/schema.sql
-
+```
 4️⃣ Iniciar backend
-
+```
 npm start
-
+```
 5️⃣ Abrir frontend
-
+```
 frontend/index.html
-
+```
 📚 Aprendizados
 
 Neste projeto, desenvolvemos:
