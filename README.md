@@ -126,26 +126,30 @@ END;
 ⚙️ Backend (Node.js + Express)
 
 A API REST inclui:
-
+```
 Funcionários
 GET    /api/funcionarios
 POST   /api/funcionarios
 PUT    /api/funcionarios/:id
 DELETE /api/funcionarios/:id
-
+```
+```
 Projetos
 GET    /api/projetos
 POST   /api/projetos
 PUT    /api/projetos/:id
 DELETE /api/projetos/:id
-
+```
+```
 Alocações
 GET    /api/alocacoes
 POST   /api/alocacoes
 PUT    /api/alocacoes/:funcionario_id/:projeto_id
 DELETE /api/alocacoes/:funcionario_id/:projeto_id
+```
 
 Conexão MySQL:
+```
 import mysql from "mysql2/promise";
 
 export const db = await mysql.createConnection({
@@ -154,6 +158,7 @@ export const db = await mysql.createConnection({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
 });
+```
 
 🎨 Frontend (HTML + CSS + JavaScript)
 
@@ -169,38 +174,38 @@ Recursos:
 
 📸 Screenshots do Sistema
 
-👥 Funcionários
+👥 Funcionários <img src="screenshots/funcionarios.png"/>
 
-📁 Projetos
+📁 Projetos <img src="screenshots/projetos.png"/>
 
-🔗 Alocações
+🔗 Alocações <img src="screenshots/alocacoes.png"/>
 
 ▶️ Como Rodar o Projeto
 
 1️⃣ Instalar dependências:
-
+```
 npm install
-
+```
 2️⃣ Arquivo .env:
-
+```
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
 DB_NAME=techmanager
 PORT=3000
-
+```
 3️⃣ Importar banco
-
+```
 sql/schema.sql
-
+```
 4️⃣ Iniciar backend
-
+```
 npm start
-
+```
 5️⃣ Abrir frontend
-
+```
 frontend/index.html
-
+```
 📚 Aprendizados
 
 Neste projeto, desenvolvemos:
